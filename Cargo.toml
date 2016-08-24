@@ -1,0 +1,7 @@
+[package]
+name = "gh_art"
+version = "0.1.0"
+authors = ["Nick Exton <nick.exton@gmail.com>"]
+
+[dependencies]
+chrono = "0.2"
