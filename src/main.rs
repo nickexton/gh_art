@@ -42,7 +42,7 @@ fn main() {
     for (day_cnt, s) in PIXELS.iter().enumerate() {
         for (week_cnt, c) in s.chars().enumerate() {
             let date = start_date + Duration::weeks(week_cnt as i64) + Duration::days(day_cnt as i64);
-            let delta : u8 = 32;
+            let delta : u8 = 2;
             match c {
                 '.' | ' ' => poke_git(date, ((delta * 0) + 1)),
                 '+'       => poke_git(date, ((delta * 1) + 1)),
